@@ -1,4 +1,9 @@
 FiveControllersApp::Application.routes.draw do
+  get "url5/index"
+  get "url4/index"
+  get "url3/index"
+  get "url2/index"
+  get "url1/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
