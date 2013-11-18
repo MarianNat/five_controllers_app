@@ -1,0 +1,9 @@
+<div class="form_wrap">
+  <h3>New message</h3>
+  <%= form_for(@post, url: url5_create_message_path(@post)) do |f| %>
+    <%= f.label :message %>
+    <%= f.text_field :message %>
+    <%= f.submit 'Send' %>
+  <% end %>
+  <%= link_to 'Back', url5_index_path %>
+</div>

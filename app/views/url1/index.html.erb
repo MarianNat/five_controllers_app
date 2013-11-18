@@ -1,2 +1,24 @@
-<h1>Url1#index</h1>
-<p>Find me in app/views/url1/index.html.erb</p>
+<% provide :title, 'Url1' %>
+  <div class="profile">
+    <h3>Profile</h3>
+    <div class="profile_body">
+      <% if @user.nil? %>
+        <%= link_to 'Add profile info', url1_new_path %>
+      <% else %>
+        <p>Name: <%= @user.name %></p>
+        <p>About: <%= @user.about %></p>
+        <%= link_to 'Edit profile info', url1_edit_path %>     
+      <% end %>
+    </div>
+  </div>
+<div class="messages">
+  <div class="new_message">
+    <%= link_to 'New message', url1_new_message_path %>
+  </div>
+  <% @post.each do |p| %>
+    <div class="message">
+      <p class="text"><%= p.message %></p>
+      <p class="time"><%= p.created_at %></p>
+    </div>
+  <% end %>
+</div>

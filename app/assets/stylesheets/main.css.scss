@@ -1,0 +1,41 @@
+.main {
+  width: 70%;
+  margin: auto; 
+  font-family: verdana;
+}
+.profile {
+  padding: 10px 0;
+  background: #E5E5E5;
+  h3 {
+    margin-left: 3%;
+  }
+}
+.profile_body {
+  margin-left: 6%;
+  font-size: 18px;
+}
+.new_message {
+  text-align: right;
+  margin: 5px 0;
+}
+.message {
+  p {
+    margin: 0;
+    margin-top: 5px;
+    background: #E6E6E5;
+    float: left;
+    padding: 1%;
+  }
+}
+.text {
+  width: 75%;
+  margin-right: 1% !important;
+}
+.time {
+  width: 20%;
+  text-align: center;
+}
+.form_wrap {
+  background: #E6E6E5;
+  padding: 1%;
+}

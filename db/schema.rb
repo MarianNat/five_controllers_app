@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131116233456) do
+ActiveRecord::Schema.define(version: 20131117191338) do
 
   create_table "posts", force: true do |t|
     t.string   "message"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20131116233456) do
     t.string   "about"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "url_id"
   end
 
 end
